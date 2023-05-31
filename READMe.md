@@ -115,7 +115,6 @@ INSERT INTO movie  VALUES (8, 'Dunkirk', 'A war film depicting the Dunkirk evacu
 INSERT INTO movie  VALUES (9, 'We''re the Millers', 'A comedy film about a drug dealer who creates a fake family to smuggle drugs across the border.', 'Comedy, Crime', TO_DATE('2013-08-07', 'YYYY-MM-DD'), 5);
 INSERT INTO movie  VALUES (10, '28 Days Later', 'A post-apocalyptic horror film set in the UK, where a virus outbreak has turned the majority of the population into zombies.', 'Horror, Sci-Fi, Thriller', TO_DATE('2002-11-01', 'YYYY-MM-DD'), 1);
 
-
 INSERT INTO watch_history  VALUES (1,2, 5);
 INSERT INTO watch_history  VALUES  (2,4, 1);
 INSERT INTO watch_history  VALUES  (3,6, 8);
@@ -126,6 +125,8 @@ INSERT INTO watch_history  VALUES   (7,3, 10);
 INSERT INTO watch_history  VALUES   (8,7, 6);
 INSERT INTO watch_history  VALUES   (9,10, 4);
 INSERT INTO watch_history  VALUES   (10,8, 9);
+INSERT INTO watch_history  VALUES   (11, 2, 7);
+INSERT INTO watch_history  VALUES   (12, 2, 8);
 ```
 
 
