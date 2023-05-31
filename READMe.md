@@ -1,4 +1,4 @@
-### Creating tables
+## Creating tables
 
 ```
 drop table payment;
@@ -99,3 +99,29 @@ create table watch_history(
 	foreign key(mid) references movie(id)
 );
 ```
+
+
+
+
+
+## Data Insertion
+
+
+```
+INSERT INTO users (id, fullname, username, email, password, gender, dob, created_at)
+VALUES
+    (1, 'Emma Johnson', 'emma.j', 'emma.j@example.com', 'p@ssw0rd', true, TO_DATE('1990-05-15', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (2, 'Liam Wilson', 'liam.w', 'liam.w@example.com', 'p@ssw0rd', false, TO_DATE('1988-09-21', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (3, 'Olivia Davis', 'olivia.d', 'olivia.d@example.com', 'p@ssw0rd', true, TO_DATE('1995-03-10', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (4, 'Noah Thompson', 'noah.t', 'noah.t@example.com', 'p@ssw0rd', false, TO_DATE('1992-11-07', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (5, 'Ava Anderson', 'ava.a', 'ava.a@example.com', 'p@ssw0rd', true, TO_DATE('1987-07-18', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (6, 'Sophia Garcia', 'sophia.g', 'sophia.g@example.com', 'p@ssw0rd', true, TO_DATE('1998-02-04', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (7, 'Mason Martinez', 'mason.m', 'mason.m@example.com', 'p@ssw0rd', false, TO_DATE('1993-12-27', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (8, 'Isabella Robinson', 'isabella.r', 'isabella.r@example.com', 'p@ssw0rd', true, TO_DATE('1991-06-11', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (9, 'Jackson Clark', 'jackson.c', 'jackson.c@example.com', 'p@ssw0rd', false, TO_DATE('1997-04-02', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD')),
+    (10, 'Sophia Wright', 'sophia.w', 'sophia.w@example.com', 'p@ssw0rd', true, TO_DATE('1989-08-25', 'YYYY-MM-DD'), TO_DATE('2023-05-31', 'YYYY-MM-DD'));
+   
+   
+```
+
+
