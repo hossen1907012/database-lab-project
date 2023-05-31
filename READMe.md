@@ -92,12 +92,14 @@ create table movie(
 );
 
 create table watch_history(
+	id integer,
 	uid integer,
 	mid integer,
-	primary key(uid, mid),
+	primary key(id),
 	foreign key(uid) references users(id),
 	foreign key(mid) references movie(id)
 );
+
 ```
 
 
@@ -164,20 +166,18 @@ VALUES
     (10, '28 Days Later', 'A post-apocalyptic horror film set in the UK, where a virus outbreak has turned the majority of the population into zombies.', 'Horror, Sci-Fi, Thriller', TO_DATE('2002-11-01', 'YYYY-MM-DD'), 1);
 
 
-
-INSERT INTO watch_history (uid, mid)
+INSERT INTO watch_history (id, uid, mid)
 VALUES
-    (2, 5),
-    (4, 1),
-    (6, 8),
-    (1, 3),
-    (9, 7),
-    (5, 2),
-    (3, 10),
-    (7, 6),
-    (10, 4),
-    (8, 9);
-
+    (1,2, 5),
+    (2,4, 1),
+    (3,6, 8),
+    (4,1, 3),
+    (5,9, 7),
+    (6,5, 2),
+    (7,3, 10),
+    (8,7, 6),
+    (9,10, 4),
+    (10,8, 9);
 
 
    
