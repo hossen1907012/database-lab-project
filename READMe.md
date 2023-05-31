@@ -1,4 +1,6 @@
 ### Creating user table
+
+```
 create table users(
 	id integer,
 	fullname varchar(50),
@@ -8,3 +10,4 @@ create table users(
 	created_at date,
 	primary key(id)
 );
+```
