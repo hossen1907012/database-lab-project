@@ -51,6 +51,6 @@ create table watch_history(
 	mid integer,
 	primary key(uid, mid),
 	foreign key(uid) references users(id),
-	foreign key(mid) references movie(id),
+	foreign key(mid) references movie(id)
 );
 ```
